@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Movement Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="auth.js"></script>
+</head>
+
+<body style="background-color: #010123;">
+    <header>
+        <h1>Bus Movement Tracker</h1>
+    </header>
+
+    <main>
+        <section id="form-section">
+            <h2>Enter Bus Movement Details</h2>
+            <form id="bus-form">
+                <label for="bus-number">Bus Number:</label>
+                <input type="text" id="bus-number" required>
+
+                <label for="departure-place">Departure Place:</label>
+                <input type="text" id="departure-place" required>
+
+                <label for="arrival-place">Arrival Place:</label>
+                <input type="text" id="arrival-place" required>
+
+                <label for="departure-time">Departure Time:</label>
+                <input type="time" id="departure-time" required>
+
+                <label for="arrival-time">Arrival Time:</label>
+                <input type="time" id="arrival-time" required>
+
+                <button type="submit">Add Bus Movement</button>
+            </form>
+        </section>
+
+        <section id="bus-movements">
+            <h2>Bus Movements</h2>
+            <table id="bus-table">
+                <thead>
+                    <tr>
+                        <th>Bus Number</th>
+                        <th>Departure Place</th>
+                        <th>Arrival Place</th>
+                        <th>Departure Time</th>
+                        <th>Arrival Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Bus data will be appended here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MD TOUFIQUE SHEIKH. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
